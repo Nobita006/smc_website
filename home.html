@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMC - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/home.js" defer></script>
+    <script src="js/toggle.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul id="nav-links">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Information & Legislation</a>
+                    <div class="dropdown-content">
+                        <a href="information.html">Information</a>
+                        <a href="legislation.html">Legislation</a>
+                    </div>
+                </li>                
+                <li><a href="apps.html">Most Popular Apps</a></li>
+                <li><a href="parents.html">How Parents Can Help</a></li>
+                <li><a href="livestreaming.html">Livestreaming</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="php/logout.php">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to Social Media Campaigns</h1>
+            <p>Stay safe online with our tips and guidelines.</p>
+        </div>
+    </section>    
+
+    <!-- Search Bar -->
+    <section id="search">
+        <h2>Search Our Webpages</h2>
+        <input type="text" id="searchBar" placeholder="Search..." onkeyup="searchFunction()">
+        <div id="searchResults" class="dropdown-content"></div>
+    </section>
+ 
+    <!-- Today's Information Section -->
+    <section id="web-services" class="info-cards">
+        <div class="info-card">
+            <h3>Current Air Quality</h3>
+            <ul id="weatherData" class="air-quality-list">
+                <!-- Dynamic data will be loaded here -->
+            </ul>
+        </div>
+        <div class="info-card">
+            <h3>Daily Fact</h3>
+            <p id="quoteData">Loading fact...</p>
+        </div>
+    </section>
+
+    <!-- Combined Social Media Apps and 3D Illustrations -->
+    <section id="popular-apps-illustrations">
+        <h2 class="section-heading">Most Popular Social Media Apps</h2> <!-- Added Heading -->
+        <div class="social-media-cards">
+            <div class="social-media-card">
+                <iframe title="Facebook" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/3f200f047cbb4266b8d178145ded1dca/embed?autostart=1&dnt=1"></iframe>
+                <h3>Facebook</h3>
+            </div>
+            <div class="social-media-card">
+                <iframe title="Instagram" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/3294ce064aea4030a560929e57232636/embed?autostart=1&dnt=1"></iframe>
+                <h3>Instagram</h3>
+            </div>
+            <div class="social-media-card">
+                <iframe title="Twitter" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/efd14ad1d1894af2b6701b31f82dc470/embed?autostart=1&dnt=1"></iframe>
+                <h3>Whatsapp</h3>
+            </div>
+            <div class="social-media-card">
+                <iframe title="Snapchat" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/58840c54a37f46f9a5279ed41b6fa6b6/embed?autostart=1&dnt=1"></iframe>
+                <h3>Snapchat</h3>
+            </div>
+        </div>
+    </section>
+    
+    <!-- How to Stay Safe Online -->
+    <section id="safety-tips" class="styled-tips">
+        <h2>How to Stay Safe Online</h2>
+        <div class="tips-content">
+            <p>Follow these guidelines to ensure your safety on social media:</p>
+            <ul>
+                <li>Never share personal information online.</li>
+                <li>Be cautious of who you connect with.</li>
+                <li>Use strong passwords and update them regularly.</li>
+                <li>Report any suspicious activity.</li>
+                <li>Keep your software up to date.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>You are here: Home</p>
+        <p>&copy; 2024 SMC Ltd. | <a href="https://facebook.com">Facebook</a> | <a href="https://www.instagram.com/">Instagram</a></p>
+    </footer>
+</body>
+</html>

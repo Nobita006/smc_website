@@ -1,0 +1,426 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3b5998; /* Facebook Blue */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+header {
+    background-color: #3b5998; /* Facebook Blue */
+    position: relative;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+    position: relative; /* Needed for dropdown */
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+/* Active link styling */
+header nav ul li a.active {
+    background-color: #1c2e5c; /* A darker shade of Facebook blue */
+    color: #f0f2f5; /* Lighter color for text contrast */
+    border-radius: 4px; /* Rounded corners for the active link */
+    font-weight: bold; /* Bold text to stand out */
+}
+
+/* Dropdown Menu */
+header nav ul li .dropdown-content {
+    display: none; /* Hide by default */
+    position: absolute;
+    background-color: #3b5998;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    top: 100%; /* Position it below the parent */
+    left: 50%;
+    transform: translateX(-50%); /* Center-align dropdown */
+}
+
+header nav ul li .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left; /* Align text to the left */
+}
+
+header nav ul li .dropdown-content a:hover {
+    background-color: #444; /* Slightly darker on hover */
+}
+
+header nav ul li:hover .dropdown-content {
+    display: block; /* Show on hover */
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.hamburger .bar {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 5px auto;
+    background-color: white;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show hamburger on small screens */
+    }
+
+    header nav ul {
+        display: none; /* Hide the menu by default */
+        flex-direction: column;
+        width: 100%;
+        background-color: #3b5998;
+        position: absolute;
+        top: 60px; /* Position it below the header */
+        left: 0;
+        padding: 0;
+        margin: 0;
+        z-index: 1000;
+    }
+
+    header nav ul.show {
+        display: flex; /* Show the menu when toggled */
+    }
+
+    header nav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 0; /* Remove margin for full width */
+    }
+
+    header nav ul li a {
+        padding: 15px 20px;
+        font-size: 18px;
+        display: block;
+    }
+
+    header nav ul li .dropdown-content {
+        position: static; /* Reposition for mobile view */
+        transform: none; /* Remove transform for center alignment */
+        box-shadow: none; /* Remove shadow */
+    }
+}
+
+/* Hero section */
+.hero-section {
+    background-image: url('images/social_media.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 20px; /* Consistent spacing */
+    position: relative; /* Ensure relative positioning for child elements */
+}
+
+/* Hero content styling */
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.6); /* Translucent black background for readability */
+    padding: 20px 30px; /* Add padding for spacing */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center;
+    max-width: 80%; /* Limit width for better readability */
+    margin: 0 auto; /* Center horizontally */
+}
+
+.hero-content h1 {
+    font-size: 3em; /* Larger font size for better readability */
+    font-weight: bold;
+    margin: 0 0 10px 0; /* Add some space below the heading */
+}
+
+.hero-content p {
+    font-size: 1.5em; /* Larger font size for better readability */
+    margin: 10px 0 0 0; /* Add some space above the paragraph */
+}
+
+
+/* Card Styles */
+.card {
+    background-color: white;
+    color: #3b5998;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    text-align: center;
+}
+
+/* General styles for the info cards section */
+.info-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin: 40px auto;
+    max-width: 1200px; /* Center align and limit the max width */
+    padding: 20px;
+}
+
+/* Individual Info Card Styling */
+.info-card {
+    background-color: #ffffff; /* White background for contrast */
+    color: #3b5998; /* Consistent text color */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    padding: 20px; /* Padding inside the card */
+    margin: 20px; /* Margin around each card */
+    flex: 1; /* Make cards flexible */
+    min-width: 280px; /* Minimum width to ensure cards are not too small */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center text inside the cards */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions for hover effects */
+}
+
+/* Hover Effects for Info Cards */
+.info-card:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Heading Styles */
+.info-card h3 {
+    font-size: 1.8em; /* Increase font size for better visibility */
+    margin-bottom: 15px; /* Space below the heading */
+    color: #333; /* Darker color for better contrast */
+}
+
+/* Paragraph (Content) Styles */
+.info-card p {
+    font-size: 1.2em; /* Increase font size for readability */
+    color: #555; /* Slightly darker color for text */
+    line-height: 1.6; /* Improve line height for readability */
+    margin: 10px 0; /* Space around the text */
+}
+
+/* Social Media Cards */
+.social-media-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto 20px auto;
+    max-width: 1200px;
+}
+
+.social-media-card {
+    flex: 1;
+    margin: 0 10px; /* Consistent spacing between cards */
+    max-width: 22%;
+}
+
+.social-media-card iframe {
+    max-width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Safety Tips Section */
+.styled-tips {
+    background-color: #fff; /* White background for the section */
+    color: #3b5998; /* Text color for better readability */
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: left;
+}
+
+/* Heading Styling */
+.styled-tips h2 {
+    color: #3b5998; /* Facebook blue color for the heading */
+    background-color: #f0f2f5; /* Light gray background to distinguish the heading */
+    padding: 15px; /* Padding for spacing */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Margin below the heading */
+    text-align: center; /* Center the heading text */
+}
+
+/* Content Styling */
+.styled-tips .tips-content {
+    margin: 0 auto;
+    max-width: 800px;
+    color: #333; /* Darker color for better readability */
+}
+
+.styled-tips .tips-content p {
+    margin-bottom: 20px;
+    color: #3b5998; /* Use the same blue color for the paragraph text */
+}
+
+.styled-tips ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.styled-tips ul li {
+    background: #f0f2f5; /* Light gray background for list items */
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    color: #333; /* Darker text color for readability */
+    text-align: left; /* Align text to the left */
+}
+
+
+/* Footer */
+footer {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Search Bar */
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #3b5998;
+}
+
+/* Other styles */
+section h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+/* Search Bar Section */
+#search {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #3b5998; /* Same blue background as the rest */
+    border-radius: 8px;
+    max-width: 1200px; /* Limit the width for better readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center;
+}
+
+#search h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Input Styling */
+#search input[type="text"] {
+    width: 90%;
+    padding: 15px;
+    margin: 0 auto 20px auto;
+    box-sizing: border-box;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: block;
+}
+
+#search input[type="text"]:focus {
+    outline: none;
+    border-color: #3b5998;
+}
+
+/* Search Results Styling */
+#searchResults {
+    background-color: #fff; /* White background for contrast */
+    border: 1px solid #ddd;
+    max-height: 300px; /* Max height with scroll */
+    overflow-y: auto; /* Scroll when content overflows */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    padding: 10px; /* Padding around the container */
+    margin-top: 10px; /* Space above the container */
+    text-align: left; /* Align text to the left */
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Individual Search Result Item */
+.search-result-item {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    background-color: #f9f9f9; /* Light background for items */
+    margin-bottom: 10px; /* Space between items */
+    border-radius: 5px; /* Rounded corners for items */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.search-result-item:hover {
+    background-color: #f1f1f1; /* Change background on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Placeholder for empty search results */
+#searchResults:empty {
+    display: none; /* Hide container if empty */
+}
+/* Styles for Air Quality List */
+.air-quality-list {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove padding */
+    margin: 20px 0; /* Add margin for spacing */
+    text-align: left; /* Align text to the left for better readability */
+}
+
+.air-quality-list li {
+    background-color: #f0f2f5; /* Light background for list items */
+    padding: 10px 15px; /* Padding inside each list item */
+    margin-bottom: 10px; /* Space between list items */
+    border-radius: 5px; /* Rounded corners */
+    color: #333; /* Darker color for text readability */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+/* Section Heading Style */
+.section-heading {
+    font-size: 2em; /* Increase the font size */
+    color: #ffffff; /* Facebook Blue color */
+    text-align: center; /* Center-align the heading */
+    margin-bottom: 30px; /* Space below the heading */
+    margin-top: 20px; /* Space above the heading */
+    font-weight: bold; /* Make the text bold */
+}

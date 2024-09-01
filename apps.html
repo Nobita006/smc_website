@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMC - Most Popular Apps</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/tips.js" defer></script>
+    <script src="js/toggle.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul id="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Information & Legislation</a>
+                    <div class="dropdown-content">
+                        <a href="information.html">Information</a>
+                        <a href="legislation.html">Legislation</a>
+                    </div>
+                </li>                
+                <li><a href="apps.html" class="active">Most Popular Apps</a></li>
+                <li><a href="parents.html">How Parents Can Help</a></li>
+                <li><a href="livestreaming.html">Livestreaming</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="php/logout.php">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content-section">
+        <h1>Most Popular Social Media Apps</h1>
+        <p>Explore the most popular social media platforms and learn how to use them safely.</p>
+    </section>
+
+    <section id="apps-list">
+        <h2>Popular Apps</h2>
+        <ul>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+            <li>Snapchat</li>
+            <li>TikTok</li>
+        </ul>
+    </section>
+
+    <section id="add-tip">
+        <h2>Add a New Safety Tip</h2>
+        <form id="addTipForm">
+            <textarea id="newTip" name="tip" rows="3" placeholder="Enter a new safety tip..." required></textarea>
+            <input type="submit" value="Add Tip">
+        </form>
+    </section>
+
+    <section id="search">
+        <h2>Search Safety Tips</h2>
+        <input type="text" id="searchBar" placeholder="Search safety tips...">
+        <div id="searchResults"></div> <!-- Moved to be a separate block within the section -->
+    </section>    
+
+    <!-- Footer -->
+    <footer>
+        <p>You are here: Most Popular Apps</p>
+        <p>&copy; 2024 SMC Ltd. | <a href="https://facebook.com">Facebook</a> | <a href="https://twitter.com">Twitter</a></p>
+    </footer>
+</body>
+</html>
