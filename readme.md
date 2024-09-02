@@ -58,9 +58,9 @@
    - **Purpose**: This script adds interactivity to the home page, managing dynamic content and user interactions.
    - **Key Features**: Handles actions such as content toggling, animations, or other dynamic behaviors on the home page.
 
-2. **`tips.js`**:
-   - **Purpose**: This script manages tips and advice content on pages like `parents.html` and `apps.html`.
-   - **Key Features**: Provides interactivity, such as revealing or hiding tips based on user actions.
+2. **`apps.js`**:
+   - **Purpose**: This script manages CRUD (Create, Read, Update, Delete) operations for the popular apps content on the apps.html page.
+   - **Key Features**: Allows users to dynamically add, edit, or delete apps from the list. It also handles the display of these apps, ensuring smooth interaction and updates without needing to refresh the page.
 
 3. **`toggle.js`**:
    - **Purpose**: This script controls the behavior of toggle elements, such as dropdowns in the navigation bar.
@@ -88,9 +88,9 @@
    - **Purpose**: This script processes the contact form submissions. It sends the user's message to the SMC team, typically via email or by storing it in the database.
    - **Key Features**: Handles form submissions, input sanitization, and email functionality (if implemented).
 
-6. **`tips.php`**:
-   - **Purpose**: This script could be used to dynamically fetch or manage tips related content, although it appears to be a placeholder or not fully implemented yet.
-   - **Key Features**: Potentially handles database queries for displaying tips or advice based on user interaction.
+6. **`apps.php`**:
+   - **Purpose**: This script is used to handle CRUD (Create, Read, Update, Delete) operations for managing the popular apps data stored in the database.
+   - **Key Features**: Manages database queries for adding new apps, fetching existing apps, updating app information, and deleting apps. It provides the backend functionality required to interact with the database securely and efficiently based on user actions.
 
 ### **Database File:**
 

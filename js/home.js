@@ -1,6 +1,6 @@
 // Fetch Air Quality Data
 async function fetchAirQuality() {
-    const apiKey = '/RadM/mLFGB7/cc85mj+oQ==pMfQPHvH2qTPqHUg'; // Replace with your actual API key
+    const apiKey = '/RadM/mLFGB7/cc85mj+oQ==pMfQPHvH2qTPqHUg'; 
     const city = 'Qatar';
     try {
         const response = await fetch(`https://api.api-ninjas.com/v1/airquality?city=${city}`, {
@@ -40,7 +40,7 @@ async function fetchAirQuality() {
 
 // Fetch Daily Fact
 async function fetchDailyFact() {
-    const apiKey = '/RadM/mLFGB7/cc85mj+oQ==pMfQPHvH2qTPqHUg'; // Replace with your actual API key
+    const apiKey = '/RadM/mLFGB7/cc85mj+oQ==pMfQPHvH2qTPqHUg'; 
 
     try {
         const response = await fetch('https://api.api-ninjas.com/v1/facts', {
@@ -52,7 +52,6 @@ async function fetchDailyFact() {
         }
 
         const data = await response.json();
-        console.log(data); // Log the response to understand its structure
 
         // Display the first fact from the response
         document.getElementById('quoteData').textContent = data[0].fact;
