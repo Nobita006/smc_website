@@ -255,14 +255,14 @@ header nav ul li:hover .dropdown-content {
 
 /* Safety Tips Section */
 .styled-tips {
-    background-color: #fff; /* White background for the section */
-    color: #3b5998; /* Text color for better readability */
-    padding: 40px 20px;
-    margin: 20px auto;
-    max-width: 1200px;
-    border-radius: 8px;
+    background-color: #fff; /* Ensure white background */
+    color: #3b5998; /* Text color consistent with theme */
+    padding: 30px; /* More padding for breathing space */
+    margin: 20px auto; /* Center-align sections */
+    max-width: 1200px; /* Limit width for readability */
+    border-radius: 8px; /* Rounded corners for aesthetics */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    text-align: left;
+    text-align: left; /* Left-align text for content readability */
 }
 
 /* Heading Styling */
@@ -423,4 +423,208 @@ section h2 {
     margin-bottom: 30px; /* Space below the heading */
     margin-top: 20px; /* Space above the heading */
     font-weight: bold; /* Make the text bold */
+}
+/* General styling for content sections */
+.content-section, .details-section, #tips, #apps-list, #add-tip, #livestreaming-tips, #legislation-details, #best-practices {
+    background-color: #fff; /* Ensure white background */
+    color: #3b5998; /* Text color consistent with theme */
+    padding: 30px; /* More padding for breathing space */
+    margin: 20px auto; /* Center-align sections */
+    max-width: 1200px; /* Limit width for readability */
+    border-radius: 8px; /* Rounded corners for aesthetics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: left; /* Left-align text for content readability */
+}
+
+/* Consistent heading styles across all pages */
+.content-section h1, .details-section h2, #tips h2, #apps-list h2, #add-tip h2, #livestreaming-tips h2, #legislation-details h2, #best-practices h2 {
+    color: #3b5998; /* Consistent heading color */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center-align headings */
+}
+
+/* Form Input and Textarea Styling */
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding for better UX */
+    margin-bottom: 20px; /* Spacing between fields */
+    border-radius: 5px; /* Rounded corners for inputs */
+    border: 1px solid #ccc; /* Subtle border */
+    font-size: 16px; /* Consistent font size */
+    background-color: #f9f9f9; /* Light background for inputs */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Input and Textarea Focus Styling */
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus {
+    outline: none; /* Remove default outline */
+    border-color: #3b5998; /* Focus color */
+    background-color: #fff; /* Change background on focus */
+}
+
+/* Center-align the image in the content section */
+.campaign-image {
+    display: block; /* Make the image a block element */
+    margin: 20px auto; /* Center the image horizontally and add margin */
+    max-width: 80%; /* Make sure the image doesn't overflow */
+    border-radius: 8px; /* Optional: Rounded corners for aesthetics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+}
+/* Input and Textarea Styling */
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding for better UX */
+    margin-bottom: 20px; /* Spacing between fields */
+    border-radius: 5px; /* Rounded corners for inputs */
+    border: 1px solid #ccc; /* Subtle border */
+    font-size: 16px; /* Consistent font size */
+    background-color: #f9f9f9; /* Light background for inputs */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Input and Textarea Focus Styling */
+#contact-form input[type="text"]:focus,
+#contact-form input[type="email"]:focus,
+#contact-form textarea:focus {
+    outline: none; /* Remove default outline */
+    border-color: #3b5998; /* Focus color */
+    background-color: #fff; /* Change background on focus */
+}
+
+/* Submit Button Styling */
+.submit-button {
+    background-color: #3b5998; /* Button background color */
+    color: white; /* Button text color */
+    padding: 12px 20px; /* Button padding */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Change cursor on hover */
+    font-size: 16px; /* Font size for button */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Submit Button Hover Effect */
+.submit-button:hover {
+    background-color: #2d4373; /* Darker shade on hover */
+}
+
+/* Privacy Policy Link Styling */
+#contact-form p a {
+    color: #1CAAD9; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text for link */
+}
+
+#contact-form p a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+/* Container for the Apps Section */
+#apps-list {
+    background-color: #fff; /* White background for contrast */
+    color: #3b5998; /* Consistent text color */
+    padding: 40px; /* Increased padding inside the section */
+    margin: 20px auto; /* Center-align the section */
+    max-width: 1200px; /* Limit width for better readability */
+    border-radius: 8px; /* Rounded corners for modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center-align content */
+}
+
+/* Styling the List of Apps */
+#apps {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 30px 0; /* Margin for spacing */
+    text-align: left; /* Align text to the left for better readability */
+}
+
+/* Individual App Container */
+#apps li {
+    background-color: #f0f2f5; /* Light grey background for each app */
+    padding: 15px 20px; /* Padding inside each app container */
+    margin-bottom: 15px; /* Space between apps */
+    border-radius: 8px; /* Rounded corners for aesthetics */
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space between app name and buttons */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition */
+}
+
+#apps li:hover {
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+/* App Name Styling */
+#apps li span {
+    font-size: 1.2em; /* Increase font size for better visibility */
+    font-weight: bold; /* Bold text for app name */
+    flex: 1; /* Take available space */
+    margin-right: 20px; /* Space between app name and buttons */
+}
+
+/* Button Container Styling */
+#apps li .button-container {
+    display: flex; /* Flexbox for layout */
+    gap: 10px; /* Gap between buttons */
+}
+
+/* Button Styling */
+#apps li button {
+    background-color: #3b5998; /* Facebook blue for buttons */
+    color: #fff; /* White text color */
+    border: none; /* Remove default border */
+    padding: 8px 15px; /* Padding for buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Button Hover Effect */
+#apps li button:hover {
+    background-color: #2d4373; /* Darker shade on hover */
+}
+
+/* Form Styling */
+#addAppForm {
+    margin-top: 20px; /* Space above the form */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 10px; /* Gap between input and button */
+}
+
+/* Input Field for Adding New App */
+#addAppForm input[type="text"] {
+    width: 100%; /* Full width for better spacing */
+    max-width: 400px; /* Maximum width to limit the input size */
+    padding: 10px; /* Padding inside input */
+    margin-bottom: 10px; /* Margin below input */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Subtle border */
+    font-size: 16px; /* Consistent font size */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+/* Centered Add Button Styling */
+#addAppForm input[type="submit"] {
+    background-color: #3b5998; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Consistent font size */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+    width: 200px; /* Fixed width for consistency */
+    text-align: center; /* Center-align button text */
+}
+
+/* Add Button Hover Effect */
+#addAppForm input[type="submit"]:hover {
+    background-color: #2d4373; /* Darker shade on hover */
 }

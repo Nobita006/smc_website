@@ -33,24 +33,27 @@
         </nav>
     </header>
 
-    <section class="content-section">
+    <section class="content-section styled-tips">
         <h1>Contact Us</h1>
         <p>If you have any questions or concerns, feel free to reach out to us through the form below.</p>
     </section>
-
-    <section id="contact-form">
+    
+    <section id="contact-form" class="styled-tips">
         <h2>Get in Touch</h2>
         <form action="php/contact.php" method="POST">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
+            
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label><br>
+            
+            <label for="message">Message:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
-            <input type="submit" value="Send">
+            
+            <input type="submit" value="Send" class="submit-button">
         </form>
         <p><a href="privacy-policy.html">Privacy Policy</a></p>
-    </section>    
+    </section>
 
     <!-- Footer -->
     <footer>

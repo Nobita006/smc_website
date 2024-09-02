@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "smc_db";
+$dbname = "smcdb";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

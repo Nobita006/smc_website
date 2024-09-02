@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SMC - Most Popular Apps</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/tips.js" defer></script>
+    <script src="js/apps.js" defer></script> <!-- Updated JS file name -->
     <script src="js/toggle.js" defer></script>
 </head>
 <body>
@@ -34,40 +34,40 @@
         </nav>
     </header>
 
-    <section class="content-section">
+    <!-- Static Safety Tips Section -->
+    <section class="content-section styled-tips">
         <h1>Most Popular Social Media Apps</h1>
         <p>Explore the most popular social media platforms and learn how to use them safely.</p>
     </section>
 
-    <section id="apps-list">
-        <h2>Popular Apps</h2>
+    <section id="safety-tips" class="styled-tips">
+        <h2>Safety Tips</h2>
         <ul>
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>Twitter</li>
-            <li>Snapchat</li>
-            <li>TikTok</li>
+            <li>Never share personal information online.</li>
+            <li>Be cautious of who you connect with.</li>
+            <li>Use strong passwords and update them regularly.</li>
+            <li>Report any suspicious activity.</li>
+            <li>Keep your software up to date.</li>
         </ul>
     </section>
 
-    <section id="add-tip">
-        <h2>Add a New Safety Tip</h2>
-        <form id="addTipForm">
-            <textarea id="newTip" name="tip" rows="3" placeholder="Enter a new safety tip..." required></textarea>
-            <input type="submit" value="Add Tip">
+    <!-- CRUD Managed Popular Apps Section -->
+    <section id="apps-list" class="styled-tips">
+        <h2>Manage Popular Apps</h2>
+        <ul id="apps">
+            <!-- Dynamically populated list of apps -->
+        </ul>
+        <h3>Add a New App</h3>
+        <form id="addAppForm">
+            <input type="text" id="newApp" name="app" placeholder="Enter a new app name..." required>
+            <input type="submit" value="Add App">
         </form>
     </section>
-
-    <section id="search">
-        <h2>Search Safety Tips</h2>
-        <input type="text" id="searchBar" placeholder="Search safety tips...">
-        <div id="searchResults"></div> <!-- Moved to be a separate block within the section -->
-    </section>    
 
     <!-- Footer -->
     <footer>
         <p>You are here: Most Popular Apps</p>
-        <p>&copy; 2024 SMC Ltd. | <a href="https://facebook.com">Facebook</a> | <a href="https://twitter.com">Twitter</a></p>
+        <p>&copy; 2024 SMC Ltd. | <a href="https://facebook.com">Facebook</a> | <a href="https://www.instagram.com/">Instagram</a></p>
     </footer>
 </body>
 </html>
