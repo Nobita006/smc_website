@@ -1,8 +1,8 @@
 /* General styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #3b5998; /* Facebook Blue */
-    color: #fff;
+    background-color: #f5f5dc; /* Beige background */
+    color: #000; /* Black text color */
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: #3b5998; /* Facebook Blue */
+    background-color: #88b8a8; /* Muted soft blue-green */
     position: relative;
     padding: 10px 0;
     z-index: 1000;
@@ -37,7 +37,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: white;
+    color: #000; /* Black text color */
     text-decoration: none;
     padding: 14px 20px;
     display: block;
@@ -47,8 +47,8 @@ header nav ul li a {
 
 /* Active link styling */
 header nav ul li a.active {
-    background-color: #1c2e5c; /* A darker shade of Facebook blue */
-    color: #f0f2f5; /* Lighter color for text contrast */
+    background-color: #6f9d87; /* Darker shade of theme color */
+    color: #fff; /* White text for contrast */
     border-radius: 4px; /* Rounded corners for the active link */
     font-weight: bold; /* Bold text to stand out */
 }
@@ -57,7 +57,7 @@ header nav ul li a.active {
 header nav ul li .dropdown-content {
     display: none; /* Hide by default */
     position: absolute;
-    background-color: #3b5998;
+    background-color: #88b8a8; /* Soft blue-green */
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1001;
@@ -67,7 +67,7 @@ header nav ul li .dropdown-content {
 }
 
 header nav ul li .dropdown-content a {
-    color: white;
+    color: #000; /* Black text color */
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -75,7 +75,7 @@ header nav ul li .dropdown-content a {
 }
 
 header nav ul li .dropdown-content a:hover {
-    background-color: #444; /* Slightly darker on hover */
+    background-color: #6f9d87; /* Slightly darker on hover */
 }
 
 header nav ul li:hover .dropdown-content {
@@ -94,7 +94,7 @@ header nav ul li:hover .dropdown-content {
     width: 30px;
     height: 4px;
     margin: 5px auto;
-    background-color: white;
+    background-color: #000; /* Black text color */
 }
 
 /* Responsive Navigation */
@@ -107,7 +107,7 @@ header nav ul li:hover .dropdown-content {
         display: none; /* Hide the menu by default */
         flex-direction: column;
         width: 100%;
-        background-color: #3b5998;
+        background-color: #88b8a8; /* Soft blue-green */
         position: absolute;
         top: 60px; /* Position it below the header */
         left: 0;
@@ -155,7 +155,7 @@ header nav ul li:hover .dropdown-content {
 
 /* Hero content styling */
 .hero-content {
-    background-color: rgba(0, 0, 0, 0.6); /* Translucent black background for readability */
+    background-color: rgba(104, 164, 147, 0.8); /* Semi-transparent shade for readability */
     padding: 20px 30px; /* Add padding for spacing */
     border-radius: 8px; /* Rounded corners */
     text-align: center;
@@ -174,11 +174,10 @@ header nav ul li:hover .dropdown-content {
     margin: 10px 0 0 0; /* Add some space above the paragraph */
 }
 
-
 /* Card Styles */
 .card {
-    background-color: white;
-    color: #3b5998;
+    background-color: #dce7e2; /* Light shade of theme color */
+    color: #000; /* Black text color */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -194,19 +193,21 @@ header nav ul li:hover .dropdown-content {
     margin: 40px auto;
     max-width: 1200px; /* Center align and limit the max width */
     padding: 20px;
+    background-color: #f5f5dc; /* Beige background for consistency */
+    border-radius: 8px; /* Rounded corners */
 }
 
 /* Individual Info Card Styling */
 .info-card {
-    background-color: #ffffff; /* White background for contrast */
-    color: #3b5998; /* Consistent text color */
+    background-color: #86b3a1; /* Main card background similar to the theme color */
+    color: #000; /* Black text color */
     border-radius: 10px; /* Rounded corners for a modern look */
     padding: 20px; /* Padding inside the card */
     margin: 20px; /* Margin around each card */
     flex: 1; /* Make cards flexible */
     min-width: 280px; /* Minimum width to ensure cards are not too small */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    text-align: center; /* Center text inside the cards */
+    text-align: left; /* Align text inside the cards */
     transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions for hover effects */
 }
 
@@ -220,15 +221,41 @@ header nav ul li:hover .dropdown-content {
 .info-card h3 {
     font-size: 1.8em; /* Increase font size for better visibility */
     margin-bottom: 15px; /* Space below the heading */
-    color: #333; /* Darker color for better contrast */
+    color: #000; /* Black text color */
+    text-align: center; /* Center-align heading text */
+    font-weight: bold; /* Bold text */
+    background-color: #dce7e2; /* Lighter shade background for heading area */
+    padding: 10px; /* Padding around heading text */
+    border-radius: 6px; /* Rounded corners for heading */
 }
 
-/* Paragraph (Content) Styles */
+/* Air Quality List Styling */
+.air-quality-list {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove padding */
+    margin: 20px 0; /* Add margin for spacing */
+    text-align: left; /* Align text to the left for better readability */
+}
+
+.air-quality-list li {
+    background-color: #dce7e2; /* Light shade of teal for list items */
+    padding: 10px 15px; /* Padding inside each list item */
+    margin-bottom: 10px; /* Space between list items */
+    border-radius: 5px; /* Rounded corners */
+    color: #000; /* Black text color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Content Paragraph Styling */
 .info-card p {
     font-size: 1.2em; /* Increase font size for readability */
     color: #555; /* Slightly darker color for text */
     line-height: 1.6; /* Improve line height for readability */
     margin: 10px 0; /* Space around the text */
+    text-align: center; /* Center-align text */
+    background-color: #dce7e2; /* Light shade of teal for the text background */
+    padding: 10px; /* Padding around text */
+    border-radius: 5px; /* Rounded corners for text background */
 }
 
 /* Social Media Cards */
@@ -255,8 +282,8 @@ header nav ul li:hover .dropdown-content {
 
 /* Safety Tips Section */
 .styled-tips {
-    background-color: #fff; /* Ensure white background */
-    color: #3b5998; /* Text color consistent with theme */
+    background-color: #88b8a8; /* Theme color background */
+    color: #000; /* Black text color */
     padding: 30px; /* More padding for breathing space */
     margin: 20px auto; /* Center-align sections */
     max-width: 1200px; /* Limit width for readability */
@@ -267,8 +294,8 @@ header nav ul li:hover .dropdown-content {
 
 /* Heading Styling */
 .styled-tips h2 {
-    color: #3b5998; /* Facebook blue color for the heading */
-    background-color: #f0f2f5; /* Light gray background to distinguish the heading */
+    color: #000; /* Black text color */
+    background-color: #dce7e2; /* Light shade of theme color */
     padding: 15px; /* Padding for spacing */
     border-radius: 8px; /* Rounded corners */
     margin-bottom: 20px; /* Margin below the heading */
@@ -279,12 +306,12 @@ header nav ul li:hover .dropdown-content {
 .styled-tips .tips-content {
     margin: 0 auto;
     max-width: 800px;
-    color: #333; /* Darker color for better readability */
+    color: #000; /* Black text color */
 }
 
 .styled-tips .tips-content p {
     margin-bottom: 20px;
-    color: #3b5998; /* Use the same blue color for the paragraph text */
+    color: #000; /* Black text color */
 }
 
 .styled-tips ul {
@@ -293,18 +320,17 @@ header nav ul li:hover .dropdown-content {
 }
 
 .styled-tips ul li {
-    background: #f0f2f5; /* Light gray background for list items */
+    background: #dce7e2; /* Light shade of theme color */
     margin: 10px 0;
     padding: 15px;
     border-radius: 5px;
-    color: #333; /* Darker text color for readability */
+    color: #000; /* Black text color */
     text-align: left; /* Align text to the left */
 }
 
-
 /* Footer */
 footer {
-    color: white;
+    color: #000; /* Black text color */
     text-align: center;
     padding: 20px;
 }
@@ -317,23 +343,26 @@ input[type="text"] {
     display: block;
     border-radius: 5px;
     border: 1px solid #ccc;
+    background-color: #dce7e2; /* Light shade of theme color */
+    color: #000; /* Black text color */
 }
 
 input[type="text"]:focus {
     outline: none;
-    border-color: #3b5998;
+    border-color: #88b8a8; /* Soft blue-green */
 }
 
 /* Other styles */
 section h2 {
-    color: #fff;
+    color: #000000; /* Black text color */
     margin-bottom: 20px;
 }
+
 /* Search Bar Section */
 #search {
     margin: 20px auto;
     padding: 20px;
-    background-color: #3b5998; /* Same blue background as the rest */
+    background-color: #88b8a8; /* Soft blue-green */
     border-radius: 8px;
     max-width: 1200px; /* Limit the width for better readability */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
@@ -341,7 +370,7 @@ section h2 {
 }
 
 #search h2 {
-    color: #fff;
+    color: #000; /* Black text color */
     margin-bottom: 20px;
 }
 
@@ -355,16 +384,19 @@ section h2 {
     border: 1px solid #ccc;
     border-radius: 8px;
     display: block;
+    background-color: #dce7e2; /* Light shade of theme color */
+    color: #000; /* Black text color */
 }
 
 #search input[type="text"]:focus {
     outline: none;
-    border-color: #3b5998;
+    border-color: #88b8a8; /* Soft blue-green */
 }
 
 /* Search Results Styling */
 #searchResults {
-    background-color: #fff; /* White background for contrast */
+    background-color: #dce7e2; /* Light shade of theme color */
+    color: #000; /* Black text color */
     border: 1px solid #ddd;
     max-height: 300px; /* Max height with scroll */
     overflow-y: auto; /* Scroll when content overflows */
@@ -379,19 +411,19 @@ section h2 {
 
 /* Individual Search Result Item */
 .search-result-item {
-    color: #333;
+    color: #000; /* Black text color */
+    background-color: #e0e4cc; /* Light beige background for items */
+    margin-bottom: 10px;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     cursor: pointer;
-    background-color: #f9f9f9; /* Light background for items */
-    margin-bottom: 10px; /* Space between items */
     border-radius: 5px; /* Rounded corners for items */
     transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
 }
 
 .search-result-item:hover {
-    background-color: #f1f1f1; /* Change background on hover */
+    background-color: #cddad4; /* Slightly darker shade on hover */
     transform: translateY(-2px); /* Lift effect on hover */
 }
 
@@ -399,6 +431,7 @@ section h2 {
 #searchResults:empty {
     display: none; /* Hide container if empty */
 }
+
 /* Styles for Air Quality List */
 .air-quality-list {
     list-style-type: none; /* Remove default bullet points */
@@ -408,40 +441,22 @@ section h2 {
 }
 
 .air-quality-list li {
-    background-color: #f0f2f5; /* Light background for list items */
+    background-color: #dce7e2; /* Light shade of theme color */
     padding: 10px 15px; /* Padding inside each list item */
     margin-bottom: 10px; /* Space between list items */
     border-radius: 5px; /* Rounded corners */
-    color: #333; /* Darker color for text readability */
+    color: #000; /* Black text color */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
+
 /* Section Heading Style */
 .section-heading {
     font-size: 2em; /* Increase the font size */
-    color: #ffffff; /* Facebook Blue color */
+    color: #000; /* Black text color */
     text-align: center; /* Center-align the heading */
     margin-bottom: 30px; /* Space below the heading */
     margin-top: 20px; /* Space above the heading */
     font-weight: bold; /* Make the text bold */
-}
-/* General styling for content sections */
-.content-section, .details-section, #tips, #apps-list, #add-tip, #livestreaming-tips, #legislation-details, #best-practices {
-    background-color: #fff; /* Ensure white background */
-    color: #3b5998; /* Text color consistent with theme */
-    padding: 30px; /* More padding for breathing space */
-    margin: 20px auto; /* Center-align sections */
-    max-width: 1200px; /* Limit width for readability */
-    border-radius: 8px; /* Rounded corners for aesthetics */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    text-align: left; /* Left-align text for content readability */
-}
-
-/* Consistent heading styles across all pages */
-.content-section h1, .details-section h2, #tips h2, #apps-list h2, #add-tip h2, #livestreaming-tips h2, #legislation-details h2, #best-practices h2 {
-    color: #3b5998; /* Consistent heading color */
-    font-weight: bold; /* Bold text */
-    margin-bottom: 20px; /* Space below the heading */
-    text-align: center; /* Center-align headings */
 }
 
 /* Form Input and Textarea Styling */
@@ -452,14 +467,15 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
     border-radius: 5px; /* Rounded corners for inputs */
     border: 1px solid #ccc; /* Subtle border */
     font-size: 16px; /* Consistent font size */
-    background-color: #f9f9f9; /* Light background for inputs */
+    background-color: #dce7e2; /* Light shade of theme color */
+    color: #000; /* Black text color */
     box-sizing: border-box; /* Include padding and border in width */
 }
 
 /* Input and Textarea Focus Styling */
 input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus {
     outline: none; /* Remove default outline */
-    border-color: #3b5998; /* Focus color */
+    border-color: #88b8a8; /* Focus color */
     background-color: #fff; /* Change background on focus */
 }
 
@@ -471,6 +487,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     border-radius: 8px; /* Optional: Rounded corners for aesthetics */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
 }
+
 /* Input and Textarea Styling */
 #contact-form input[type="text"],
 #contact-form input[type="email"],
@@ -481,7 +498,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     border-radius: 5px; /* Rounded corners for inputs */
     border: 1px solid #ccc; /* Subtle border */
     font-size: 16px; /* Consistent font size */
-    background-color: #f9f9f9; /* Light background for inputs */
+    background-color: #dce7e2; /* Light shade of theme color */
+    color: #000; /* Black text color */
     box-sizing: border-box; /* Include padding and border in width */
 }
 
@@ -490,13 +508,13 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 #contact-form input[type="email"]:focus,
 #contact-form textarea:focus {
     outline: none; /* Remove default outline */
-    border-color: #3b5998; /* Focus color */
+    border-color: #88b8a8; /* Focus color */
     background-color: #fff; /* Change background on focus */
 }
 
 /* Submit Button Styling */
 .submit-button {
-    background-color: #3b5998; /* Button background color */
+    background-color: #3b3b3b; /* Button background color */
     color: white; /* Button text color */
     padding: 12px 20px; /* Button padding */
     border: none; /* Remove default border */
@@ -508,12 +526,12 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 /* Submit Button Hover Effect */
 .submit-button:hover {
-    background-color: #2d4373; /* Darker shade on hover */
+    background-color: #000000; /* Darker shade on hover */
 }
 
 /* Privacy Policy Link Styling */
 #contact-form p a {
-    color: #1CAAD9; /* Link color */
+    color: #000000; /* Link color */
     text-decoration: none; /* Remove underline */
     font-weight: bold; /* Bold text for link */
 }
@@ -521,10 +539,9 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 #contact-form p a:hover {
     text-decoration: underline; /* Underline on hover */
 }
+
 /* Container for the Apps Section */
 #apps-list {
-    background-color: #fff; /* White background for contrast */
-    color: #3b5998; /* Consistent text color */
     padding: 40px; /* Increased padding inside the section */
     margin: 20px auto; /* Center-align the section */
     max-width: 1200px; /* Limit width for better readability */
@@ -543,7 +560,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 /* Individual App Container */
 #apps li {
-    background-color: #f0f2f5; /* Light grey background for each app */
+    background-color: #dce7e2; /* Light shade of theme color */
     padding: 15px 20px; /* Padding inside each app container */
     margin-bottom: 15px; /* Space between apps */
     border-radius: 8px; /* Rounded corners for aesthetics */
@@ -575,7 +592,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 /* Button Styling */
 #apps li button {
-    background-color: #3b5998; /* Facebook blue for buttons */
+    background-color: #88b8a8; /* Soft blue-green for buttons */
     color: #fff; /* White text color */
     border: none; /* Remove default border */
     padding: 8px 15px; /* Padding for buttons */
@@ -586,7 +603,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 /* Button Hover Effect */
 #apps li button:hover {
-    background-color: #2d4373; /* Darker shade on hover */
+    background-color: #6f9d87; /* Darker shade on hover */
 }
 
 /* Form Styling */
@@ -607,12 +624,14 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     border-radius: 5px; /* Rounded corners */
     border: 1px solid #ccc; /* Subtle border */
     font-size: 16px; /* Consistent font size */
+    background-color: #dce7e2; /* Light shade of theme color */
+    color: #000; /* Black text color */
     box-sizing: border-box; /* Include padding in width */
 }
 
 /* Centered Add Button Styling */
 #addAppForm input[type="submit"] {
-    background-color: #3b5998; /* Button background color */
+    background-color: #3b3b3b; /* Button background color */
     color: #fff; /* Button text color */
     border: none; /* Remove default border */
     padding: 10px 20px; /* Padding for button */
@@ -626,5 +645,5 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 /* Add Button Hover Effect */
 #addAppForm input[type="submit"]:hover {
-    background-color: #2d4373; /* Darker shade on hover */
+    background-color: #000000; /* Darker shade on hover */
 }
