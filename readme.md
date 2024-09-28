@@ -1,5 +1,3 @@
----
-
 ### **HTML Files:**
 
 1. **`home.html`**:
