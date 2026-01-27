@@ -3,10 +3,16 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f5f5dc; /* Beige background */
     color: #000; /* Black text color */
+    cursor: url('images/custom-cursor.png'), auto;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     text-align: center;
+}
+
+/* Custom cursor specifically for links (hover state) */
+a:hover {
+    cursor: url('images/custom-hand-cursor.png'), pointer; /* Custom hand cursor on hover */
 }
 
 header {
